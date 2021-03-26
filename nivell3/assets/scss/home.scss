@@ -1,0 +1,11 @@
+#homeContainer {
+  height: 85vh;
+  overflow: auto;
+}
+
+@media (max-height: 731px) {
+  #homeContainer {
+    height: 72vh;
+    overflow: auto;
+  }
+}

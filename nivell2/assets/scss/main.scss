@@ -1,0 +1,148 @@
+html {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dff9fb;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2322a6b3' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+nav {
+  padding: 30px;
+  background-color: #130f40;
+  color: #486079;
+}
+
+nav a {
+  font-weight: bold;
+}
+
+.nuxt-link-exact-active {
+  color: #42b983 !important;
+}
+
+h1 {
+  color: rgb(44, 33, 33);
+  text-shadow: 2px 2px 2px purple;
+}
+
+.info-box {
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px black;
+  background-color: white;
+  padding: 10px;
+}
+
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: #130f40;
+  font-size: 0.8rem;
+  color: #486079;
+}
+
+.content {
+  min-height: calc(100vh - 40px);
+}
+
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  transition: all 0.75s;
+}
+
+.page-enter-to {
+  opacity: 1;
+}
+
+// Formulari de cerca
+
+@media (max-width: 320px) {
+  #formulari{
+    width: 150px;
+  }
+}
+
+@media (max-width: 280px) {
+  #formulari{
+    width: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  #formulari{
+    position: absolute;
+    right: 30px;
+  }
+}
+
+#lupa{
+  cursor: pointer;
+}
+
+// Modal
+.dialog-background{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button{
+    border: none;
+    background-color: white;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .dialog-foreground{
+      width: 90%;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 770px) {
+  .dialog-foreground{
+      width: 70%;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1024px) {
+  .dialog-foreground{
+      width: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .dialog-foreground{
+      width: 30%;
+  }
+}
+
+.dialog-foreground{
+  // margin: auto;
+  // margin-top: 30px;
+  background-color: white;
+  z-index: 15;
+}

@@ -1,0 +1,57 @@
+.contenidor-fitxes {
+  height: 70vh;
+  overflow: auto;
+}
+
+@media (min-height: 1024px) {
+  .contenidor-fitxes {
+    height: 80vh;
+  }
+}
+
+.fitxa {
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fitxa button {
+  width: 100px;
+}
+
+@media (max-width: 360px) {
+  .fitxa {
+    width: 100%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 750px) {
+  .fitxa {
+    width: 47%;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 1000px) {
+  .fitxa {
+    width: 31%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1299px) {
+  .fitxa {
+    width: 23.5%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .fitxa {
+    width: 24%;
+  }
+}
