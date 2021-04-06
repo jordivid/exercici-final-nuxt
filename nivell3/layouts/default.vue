@@ -42,7 +42,7 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <NuxtLink to="/home" class="nav-link">
+                <NuxtLink to="/Home" class="nav-link">
                   Home
                 </NuxtLink>
               </li>

@@ -4,6 +4,6 @@ export default {
     this.$store.dispatch('RetrieveAlbums')
   },
   mounted () {
-    this.$router.push('/home')
+    this.$router.push('/Home')
   }
 }

@@ -25,10 +25,9 @@ nav {
   padding: 30px;
   background-color: #130f40;
   color: #486079;
-}
-
-nav a {
-  font-weight: bold;
+  a {
+    font-weight: bold;
+  }
 }
 
 .nuxt-link-exact-active {

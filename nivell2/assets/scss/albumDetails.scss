@@ -1,11 +1,10 @@
 .contenidor-fotos {
   overflow: auto;
-}
-
-.contenidor-fotos img {
-  margin: 5px;
-  width: 150px;
-  height: auto;
+  img {
+    margin: 5px;
+    width: 150px;
+    height: auto;
+  }
 }
 
 @media (max-height: 414px) {
